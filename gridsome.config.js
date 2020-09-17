@@ -15,5 +15,12 @@ module.exports = {
     {
       use: "gridsome-plugin-tailwindcss",
     },
+    {
+      use: "@zefman/gridsome-source-instagram",
+      options: {
+        username: "taryn.knepp", // Instagram username
+        typeName: "Instagram", // The GraphQL type you want the photos to be added under. Defaults to InstagramPhoto
+      },
+    },
   ],
 };
