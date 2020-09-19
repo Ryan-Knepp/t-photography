@@ -2,7 +2,6 @@
   <div>
     <insta-bar />
     <Layout>
-      <g-image alt="Example image" src="~/favicon.png" width="135" />
       <h1>Hello, world!</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
@@ -15,9 +14,22 @@
 
 <script>
 import InstaBar from "../components/InstaBar.vue";
+
 export default {
   components: {
     InstaBar,
   },
 };
 </script>
+
+<style>
+h1 {
+  @apply text-6xl;
+}
+h2 {
+  @apply text-4xl;
+}
+h3 {
+  @apply text-2xl;
+}
+</style>
