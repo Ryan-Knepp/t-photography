@@ -5,10 +5,12 @@
       :key="edge.node.id"
       :href="`https://www.instagram.com/p/${edge.node.shortcode}`"
       target="_blank"
+      class="hover:z-50 relative transition-all duration-300 ease-in-out transform hover:scale-110"
     >
       <g-image
         :src="edge.node.thumbnail_resources[0].src"
         :alt="edge.node.accessibility_caption"
+        class=""
       />
     </a>
   </div>

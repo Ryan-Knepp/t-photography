@@ -14,6 +14,9 @@ module.exports = {
     },
     {
       use: "gridsome-plugin-tailwindcss",
+      options: {
+        tailwindConfig: "./tailwind.config.js",
+      },
     },
     {
       use: "@zefman/gridsome-source-instagram",
