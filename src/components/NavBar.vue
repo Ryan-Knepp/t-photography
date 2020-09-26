@@ -1,6 +1,6 @@
 <template>
   <header class="flex w-full max-w-6xl justify-around mx-auto">
-    <g-image :src="$static.biz.logo.file.url" />
+    <img :src="$static.biz.logo.file.url" width="64" height="64" />
     <ul class="flex text-rose-800 font-bold text-xl">
       <li class="p-4">
         <g-link to="/">Home</g-link>
@@ -19,7 +19,11 @@
       </li>
     </ul>
     <div class="flex-shrink-0">
-      <socials />
+      <socials
+        :instagram="$static.biz.instagram"
+        :email="$static.biz.email"
+        :facebook="$static.biz.facebook"
+      />
     </div>
   </header>
 </template>
@@ -40,6 +44,7 @@ export default {
             id
             email
             instagram
+            facebook
             logo {
                 title
                 file {
