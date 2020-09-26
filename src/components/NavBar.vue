@@ -1,7 +1,7 @@
 <template>
-  <header class="flex w-full justify-around">
+  <header class="flex w-full max-w-6xl justify-around mx-auto">
     <g-image :src="$static.biz.logo.file.url" />
-    <ul class="flex text-pink-600 font-bold text-xl">
+    <ul class="flex text-rose-800 font-bold text-xl">
       <li class="p-4">
         <g-link to="/">Home</g-link>
       </li>
@@ -18,9 +18,21 @@
         <g-link to="/contact/">Contact</g-link>
       </li>
     </ul>
-    <h3>right side</h3>
+    <div class="flex-shrink-0">
+      <socials />
+    </div>
   </header>
 </template>
+
+<script>
+import Socials from "../components/Socials.vue";
+
+export default {
+  components: {
+    Socials,
+  },
+};
+</script>
 
 <static-query>
     query {
