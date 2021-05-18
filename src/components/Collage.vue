@@ -1,6 +1,10 @@
 <template>
   <div class="collage">
-    <div class="familyGaller cell">Family Gallery</div>
+    <div
+      class="familyGallery justify-self-center self-center border border-rose-300"
+    >
+      Family Gallery
+    </div>
     <g-image
       class="topImage cell"
       :src="$static.data.heroCollageImage1.file.url"
@@ -13,7 +17,11 @@
       class="bottomImage cell"
       :src="$static.data.heroCollageImage2.file.url"
     />
-    <div class="newbornGallery cell">Newborn Gallery</div>
+    <div
+      class="newbornGallery justify-self-center self-center border border-rose-300"
+    >
+      Newborn Gallery
+    </div>
   </div>
 </template>
 
@@ -61,10 +69,12 @@ query {
     margin: 0 auto;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 25vh 25vh;
+    grid-template-rows: 30vh 30vh;
     grid-template-areas:
       "family top-image top-image"
       "bottom-image bottom-image newborn";
+    justify-items: center;
+    align-items: center;
   }
   .verticalImage {
     display: none;
@@ -75,13 +85,15 @@ query {
   .collage {
     display: grid;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     max-width: 1280px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25vh 25vh;
+    grid-template-rows: 30vh 30vh;
     grid-template-areas:
       "family top-image top-image vertical-image"
       "bottom-image bottom-image newborn vertical-image";
+    justify-content: center;
+    align-items: center;
   }
   .verticalImage {
     display: inherit;

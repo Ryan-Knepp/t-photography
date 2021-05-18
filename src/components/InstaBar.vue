@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center m-6">
-    <a
+    <!-- <a
       v-for="edge in $static.posts.edges"
       :key="edge.node.id"
       :href="`https://www.instagram.com/p/${edge.node.shortcode}`"
@@ -10,13 +10,13 @@
       <g-image
         :src="edge.node.thumbnail_resources[0].src"
         :alt="edge.node.accessibility_caption"
-        class=""
+        class="max-h-32"
       />
-    </a>
+    </a> -->
   </div>
 </template>
 
-<static-query>
+<not-query>
     query Instagram {
         posts: allInstagram (sortBy:"taken_at_timestamp" limit: 6) {
             edges {
@@ -35,4 +35,4 @@
             }
         }
     }
-</static-query>
+</not-query>

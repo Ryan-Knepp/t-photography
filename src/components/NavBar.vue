@@ -1,40 +1,31 @@
 <template>
-  <header class="flex w-full max-w-6xl justify-around mx-auto">
+  <header class="flex justify-between my-4">
     <img :src="$static.biz.logo.file.url" width="64" height="64" />
-    <ul class="flex text-rose-800 font-bold text-xl">
-      <li class="p-4">
-        <g-link to="/">Home</g-link>
-      </li>
-      <li class="p-4">
-        <g-link to="/portfolio/">Portfolio</g-link>
-      </li>
-      <li class="p-4">
-        <g-link to="/blog/">Blog</g-link>
-      </li>
-      <li class="p-4">
-        <g-link to="/about/">About</g-link>
-      </li>
-      <li class="p-4">
-        <g-link to="/contact/">Contact</g-link>
-      </li>
-    </ul>
-    <div class="flex-shrink-0">
-      <socials
-        :instagram="$static.biz.instagram"
-        :email="$static.biz.email"
-        :facebook="$static.biz.facebook"
-      />
-    </div>
+    <nav class="">
+      <ul class="flex text-accent-dark font-bold text-xl uppercase">
+        <li class="mx-2 p-4">
+          <g-link to="/">Home</g-link>
+        </li>
+        <li class=" mx-2 p-4">
+          <g-link to="/portfolio/">Portfolio</g-link>
+        </li>
+        <li class="mx-2 p-4">
+          <g-link to="/blog/">Blog</g-link>
+        </li>
+        <li class="mx-2 p-4">
+          <g-link to="/about/">About</g-link>
+        </li>
+        <li class="pl-4 py-4">
+          <g-link to="/contact/">Contact</g-link>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
 
 <script>
-import Socials from "../components/Socials.vue";
-
 export default {
-  components: {
-    Socials,
-  },
+  components: {},
 };
 </script>
 

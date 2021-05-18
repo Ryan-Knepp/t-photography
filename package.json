@@ -3,12 +3,13 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "develop": "gridsome develop",
+    "dev": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@contentful/rich-text-html-renderer": "^14.1.1",
+    "@contentful/rich-text-html-renderer": "^14.1.2",
     "@gridsome/source-contentful": "^0.6.0",
+    "@tailwindcss/typography": "^0.4.0",
     "@zefman/gridsome-source-instagram": "^0.1.3",
     "gridsome": "^0.7.22",
     "tailwindcss": "^2.0.1-compat"

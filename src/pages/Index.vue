@@ -1,7 +1,8 @@
 <template>
   <div>
-    <insta-bar />
+    <!-- <insta-bar /> -->
     <Layout>
+      <Collage />
       <h1>Hello, world!</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
@@ -14,22 +15,14 @@
 
 <script>
 import InstaBar from "../components/InstaBar.vue";
+import Collage from "../components/Collage.vue";
 
 export default {
   components: {
     InstaBar,
+    Collage,
   },
 };
 </script>
 
-<style>
-h1 {
-  @apply text-6xl;
-}
-h2 {
-  @apply text-4xl;
-}
-h3 {
-  @apply text-2xl;
-}
-</style>
+<style></style>

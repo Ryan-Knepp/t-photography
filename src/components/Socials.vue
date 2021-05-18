@@ -1,12 +1,15 @@
 <template>
-  <ul class="flex justify-left mt-6">
+  <ul class="flex justify-left items-center h-full">
     <li class="px-4">
       <a :href="'https://www.facebook.com/' + $props.facebook" target="_blank">
         <img src="../assets/facebook.svg" alt />
       </a>
     </li>
     <li class="px-4">
-      <a :href="'https://www.instagram.com/' + $props.instagram" target="_blank">
+      <a
+        :href="'https://www.instagram.com/' + $props.instagram"
+        target="_blank"
+      >
         <img src="../assets/instagram.svg" alt />
       </a>
     </li>
